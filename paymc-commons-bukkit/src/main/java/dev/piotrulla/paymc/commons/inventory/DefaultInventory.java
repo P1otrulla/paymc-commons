@@ -65,7 +65,7 @@ public class DefaultInventory {
         }
         int slot = item.slot();
 
-        return slot >= 0 && slot < totalSlots() - 1;
+        return slot > 0 && slot < totalSlots() - 1;
     }
 
     public Map<IntRange, ItemStack> decorations() {
